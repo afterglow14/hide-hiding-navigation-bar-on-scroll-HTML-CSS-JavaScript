@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  background-color: #f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+  background-color: brown;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+#navbar a {
+  
+  display: block;
+  padding: 15px;
+  
+  
+}
+
+#navbar a:hover {
+  background-color: green;
+  color: white;
+  
+}
+
+.dropdowncontent { 
+    display: none; 
+    position: absolute;
+    background-color: #e6ffe6;
+    min-width: 160px;
+    box-shadow: 20px 20px 20px 10px grey;
+    z-index: 1;
+}
+
+li {
+  float: left;
+}
+
+
+.dropdowncontent a { 
+    color: green;
+    padding: 12px 16px; 
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.listblockformat:hover .dropdowncontent {
+  display: block;
+}
+
+.listblockformat:hover .topnavigationlinkformat {
+    background-color: gray; /*this will make the hover color to stay when you hover its dropdown content, you can put any color here that you want to stay when you hover on its dropdown content, in this case it is the color gray that stays when you hover on it dropdown content*/
+    color: cyan;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<ul id="navbar">
+	<li class="listblockformat"><a class="topnavigationlinkformat">Home</a>
+    	<div class="dropdowncontent">
+      		<a>1</a>
+            <a>2</a>
+            <a>3</a>
+      	<div>
+    </li>
+    
+    <li class="listblockformat"><a class="topnavigationlinkformat">News</a>
+    	<div class="dropdowncontent">
+      		<a>1</a>
+            <a>2</a>
+            <a>3</a>
+      	<div>
+    </li>
+    
+    <li class="listblockformat"><a class="topnavigationlinkformat">Contact</a>
+    	<div class="dropdowncontent">
+      		<a>1</a>
+            <a>2</a>
+            <a>3</a>
+      	<div>
+    </li>
+
+</ul>
+
+<div style="padding:15px 15px 2500px;font-size:30px;margin-top:30px;">
+  <p><b>This example demonstrates how to hide a navbar when the user starts to scroll the page.</b></p>
+  <p>Scroll down this frame to see the effect!</p>
+  <p>Scroll up to show the navbar.</p>
+  <p>Lorem ipsum dolor dummy text sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>Lorem ipsum dolor dummy text sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+</body>
+</html>
