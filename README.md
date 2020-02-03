@@ -1,4 +1,4 @@
-# hide-hiding-navigation-bar-on-scroll-HTML-CSS-JavaScript
+## hide-hiding-navigation-bar-on-scroll-HTML-CSS-JavaScript
 
 ### USAGE
 Anyone can fork, copy, use, share, distribute, and modify the source code of this repository for free.
