@@ -1,4 +1,4 @@
-## Hide Navigation Bar on Scroll (HTML, CSS, JavaScript)
+## Hide Navigation Bar on Scroll (HTML5, CSS, JavaScript)
 
 #### CODE USAGE
 Anyone can fork, copy, use, share, distribute, and modify the source code of this repository for free.
